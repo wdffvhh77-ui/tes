@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Profil - Web UTS</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        /* NAVIGASI */
+        nav {
+            background-color: #2c3e50;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+        }
+        .logo { color: white; font-size: 20px; font-weight: bold; }
+        .menu { display: flex; list-style: none; margin: 0; padding: 0; gap: 20px; }
+        .menu a { color: white; text-decoration: none; font-weight: 500; }
+        .menu a:hover { color: #1abc9c; }
+
+        /* KONTEN PROFIL (FLEXBOX) */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .profile-flex {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .profile-flex img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #2c3e50;
+        }
+
+        .profile-info {
+            flex: 1;
+        }
+
+        .profile-info p {
+            line-height: 1.6;
+        }
+
+        /* TAUTAN / LINK */
+        .link-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 18px;
+            background-color: #1abc9c;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .link-button:hover {
+            background-color: #16a085;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #2c3e50;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">MyWebsite</div>
+        <ul class="menu">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Profil Mahasiswa</h1>
+
+        <div class="profile-flex">
+            <!-- GAMBAR PROFIL -->
+            <img src="https://via.placeholder.com/180" alt="Foto Profil">
+
+            <!-- INFORMASI TEKS & TAUTAN -->
+            <div class="profile-info">
+                <h3>Informasi Diri</h3>
+                <p><strong>Nama:</strong> Mahasiswa Lab</p>
+                <p><strong>Mata Kuliah:</strong> Pemrograman Web</p>
+                <p><strong>Deskripsi:</strong> Sedang mengikuti Ujian Tengah Semester (UTS) di laboratorium komputer untuk mempraktikkan dasar HTML, CSS, dan JS.</p>
+
+                <!-- TAUTAN/LINK EKSTERNAL & INTERNAL -->
+                <p>Kunjungi tautan berikut untuk informasi kampus:</p>
+                <a href="https://google.com" target="_blank" class="link-button">Kunjungi Google / Kampus</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 UTS Pemrograman Web - All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
